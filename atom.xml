@@ -6,7 +6,7 @@
   <link href="http://adairwhy.github.io/atom.xml" rel="self"/>
   
   <link href="http://adairwhy.github.io/"/>
-  <updated>2022-07-20T06:50:43.949Z</updated>
+  <updated>2022-07-21T16:06:13.036Z</updated>
   <id>http://adairwhy.github.io/</id>
   
   <author>
@@ -17,23 +17,73 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>Hello World</title>
-    <link href="http://adairwhy.github.io/2022/07/20/hello-world/"/>
-    <id>http://adairwhy.github.io/2022/07/20/hello-world/</id>
-    <published>2022-07-20T06:50:43.949Z</published>
-    <updated>2022-07-20T06:50:43.949Z</updated>
+    <title>Hello World &amp; 第一篇现实意义上的Blog的碎碎念</title>
+    <link href="http://adairwhy.github.io/2022/07/21/2022_07_21%20-%20hello%20world/"/>
+    <id>http://adairwhy.github.io/2022/07/21/2022_07_21%20-%20hello%20world/</id>
+    <published>2022-07-21T09:06:10.000Z</published>
+    <updated>2022-07-21T16:06:13.036Z</updated>
     
     
       
       
         
         
-    <summary type="html">&lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a href=&quot;https://hexo.io/docs/&quot;&gt;documentation&lt;/a&gt;</summary>
+    <summary type="html">&lt;p&gt;&lt;font color=&quot;black&quot; size=4 face=&quot;华文中宋&quot;&gt;&lt;br&gt;&lt;strong&gt;本来想把Quick</summary>
         
       
     
     
     
+    
+    <category term="Whisper" scheme="http://adairwhy.github.io/tags/Whisper/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>11：52</title>
+    <link href="http://adairwhy.github.io/2020/12/04/2020_12_04%20-%2011_52/"/>
+    <id>http://adairwhy.github.io/2020/12/04/2020_12_04%20-%2011_52/</id>
+    <published>2020-12-04T03:52:00.000Z</published>
+    <updated>2022-07-21T15:50:14.214Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;blockquote&gt;
+&lt;p&gt;&lt;font color=&quot;black&quot; size=4</summary>
+        
+      
+    
+    
+    
+    
+    <category term="Reading" scheme="http://adairwhy.github.io/tags/Reading/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>23：14</title>
+    <link href="http://adairwhy.github.io/2020/02/23/2020_12_02%20-%2023_14/"/>
+    <id>http://adairwhy.github.io/2020/02/23/2020_12_02%20-%2023_14/</id>
+    <published>2020-02-23T15:14:00.000Z</published>
+    <updated>2022-07-21T15:48:28.941Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;blockquote&gt;
+&lt;p&gt;&lt;font color=&quot;black&quot; size=4</summary>
+        
+      
+    
+    
+    
+    
+    <category term="Reading" scheme="http://adairwhy.github.io/tags/Reading/"/>
     
   </entry>
   
