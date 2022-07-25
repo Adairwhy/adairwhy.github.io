@@ -1,0 +1,143 @@
+<!DOCTYPE html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="X-UA-Compatible" content="IE=edge"><meta name="author"><title>ANSYS Fluent旋转机械周期性边界MRF方法热流固耦合参数化仿真关键步骤流程 · Adairwhy</title><meta name="description" content="1 SCDM几何处理
+
+
+部分流程可以参考FLUENT旋转周期性边界条件MRF方法流热耦合分析
+
+
+Part划分，没有固体域，流体域分Rotate和Static两个域，
+MRF理论参考：CFD理论24 MRF多重参考系法-旋转机械。
+
+
+Rotate和Static一起设置周期交界面。Rotate域和"><meta name="og:description" content="1 SCDM几何处理
+
+
+部分流程可以参考FLUENT旋转周期性边界条件MRF方法流热耦合分析
+
+
+Part划分，没有固体域，流体域分Rotate和Static两个域，
+MRF理论参考：CFD理论24 MRF多重参考系法-旋转机械。
+
+
+Rotate和Static一起设置周期交界面。Rotate域和"><meta name="twitter:site" content="Adairwhy"><meta name="twitter:title" content="ANSYS Fluent旋转机械周期性边界MRF方法热流固耦合参数化仿真关键步骤流程"><meta name="twitter:card" content="summary"><meta name="keywords" content=""><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport"><meta content="yes" name="apple-mobile-web-app-capable"><meta content="black" name="apple-mobile-web-app-status-bar-style"><meta content="telephone=no" name="format-detection"><meta name="renderer" content="webkit"><link rel="short icon" href="images/favicon.png" type="image/x-icon"><link rel="stylesheet" href="/css/bootstrap.min.css"><link rel="stylesheet" href="/css/font-awesome.min.css"><link rel="stylesheet" href="/css/style.css"><link rel="alternate" type="application/atom+xml" title="ATOM 1.0" href="/atom.xml"><meta name="generator" content="Hexo 6.2.0"><link rel="stylesheet" href="/css/prism.css" type="text/css"></head><body><div id="stage" class="container"><div class="row"><div id="side-bar" class="col-sm-3 col-xs-12 side-container invisible"><div class="vertical-text site-title"><h3 tabindex="-1" class="site-title-small"><a href="/" class="a-title">whisper</a></h3><h1 tabindex="-1" class="site-title-large"><a href="/" class="a-title">Adairwhy</a></h1><!--h6(onclick="triggerSiteNav()") Trigger--></div><br class="visible-lg visible-md visible-sm"><div id="site-nav" class="site-title-links"><ul><li><a href="/">Home</a></li><li><a href="/archives">Archive</a></li><li><a href="/tags">Tags</a></li><li><a href="/about/index.html">about</a></li><li class="soc"><a href="https://github.com/Adairwhy" target="_blank" rel="noopener noreferrer" aria-label="Github"><i class="fa fa-github">&nbsp;</i></a><a href="http://adairwhy.github.io/atom.xml" target="_blank" rel="noopener noreferrer" aria-label="RSS"><i class="fa fa-rss">&nbsp;</i></a></li></ul><div class="visible-lg visible-md visible-sm site-nav-footer"><br class="site-nav-footer-br"><footer><p>&copy;&nbsp;2022&nbsp;<a target="_blank" href="http://adairwhy.github.io" rel="noopener noreferrer">Adair Why</a></p><p>Theme&nbsp;<a target="_blank" href="https://github.com/SumiMakito/hexo-theme-typography" rel="noopener noreferrer">Typography</a>&nbsp;by&nbsp;<a target="_blank" href="https://www.keep.moe" rel="noopener noreferrer">Makito</a></p><p>Proudly published with&nbsp;<a target="_blank" href="https://hexo.io" rel="noopener noreferrer">Hexo</a></p></footer></div></div></div><div id="main-container" class="col-sm-9 col-xs-12 main-container invisible"><div class="autopagerize_page_element"><div class="content"><div class="post-page"><div class="post-container"><p class="post-title"><a>ANSYS Fluent旋转机械周期性边界MRF方法热流固耦合参数化仿真关键步骤流程</a></p><p class="post-meta"><span class="date meta-item">Posted at&nbsp;2022-07-25</span><span class="meta-item"><i class="fa fa-tag"></i><span>&nbsp;</span><a href="/tags/Tech/" title="Tech" class="a-tag">Tech</a><span>&nbsp;</span></span></p><p class="post-abstract"><h3 id="1-scdm几何处理"><a class="markdownIt-Anchor" href="#1-scdm几何处理"></a> <strong>1 SCDM几何处理</strong></h3>
+<ul>
+<li>
+<p>部分流程可以参考<a target="_blank" rel="noopener" href="https://www.bilibili.com/video/BV1it4y1H7o9?spm_id_from=333.337.search-card.all.click&amp;vd_source=e5d8615f1d1dea9c8fcaf2558e1cc40c">FLUENT旋转周期性边界条件MRF方法流热耦合分析</a></p>
+</li>
+<li>
+<p>Part划分，没有固体域，流体域分Rotate和Static两个域，<br />
+MRF理论参考：<a target="_blank" rel="noopener" href="https://www.bilibili.com/video/BV1YL4y1j7dF?spm_id_from=333.337.search-card.all.click&amp;vd_source=e5d8615f1d1dea9c8fcaf2558e1cc40c">CFD理论24 MRF多重参考系法-旋转机械</a>。</p>
+</li>
+<li>
+<p>Rotate和Static一起设置周期交界面。Rotate域和固体域的交界面设置Wall。</p>
+</li>
+</ul>
+<div  align="center"> 
+<img src=https://raw.githubusercontent.com/Adairwhy/ImageBed/main/img/20220725-Geom-Part划分和周期面设置.png width=75% />
+</div>
+<ul>
+<li>Rotate和Static的交界面需要共享拓扑。</li>
+</ul>
+<div  align="center"> 
+<img src=https://raw.githubusercontent.com/Adairwhy/ImageBed/main/img/20220725-Geom-Rotate和Static共享拓扑.png width=75% />
+</div>
+<hr />
+<h3 id="2-ansys-mesh网格划分"><a class="markdownIt-Anchor" href="#2-ansys-mesh网格划分"></a> <strong>2 ANSYS mesh网格划分</strong></h3>
+<ul>
+<li>建立旋转坐标系。</li>
+</ul>
+<div  align="center"> 
+<img src=https://raw.githubusercontent.com/Adairwhy/ImageBed/main/img/20220725-mesh-旋转坐标系.png width=75% />
+</div>
+<ul>
+<li>设置周期交界面，顺时针选择low和high面。</li>
+</ul>
+<div  align="center"> 
+<img src=https://raw.githubusercontent.com/Adairwhy/ImageBed/main/img/20220725-mesh-周期交界面.png width=75% />
+</div>
+<ul>
+<li>设置参数，划分网格。<br />
+检查Rotate和Static的网格是否共节点，检查网格质量。</li>
+</ul>
+<div  align="center"> 
+<img src=https://raw.githubusercontent.com/Adairwhy/ImageBed/main/img/20220725-mesh-共节点.png width=75% />
+</div>
+<hr />
+<h3 id="3-fluent求解"><a class="markdownIt-Anchor" href="#3-fluent求解"></a> <strong>3 Fluent求解</strong></h3>
+<ul>
+<li>
+<p>Scale等。<br />
+打开Energy方程，选择湍流模型。</p>
+</li>
+<li>
+<p>MRF设置，选择旋转域，打开Frame Motion，设置轴和转速。</p>
+</li>
+</ul>
+<div  align="center"> 
+<img src=https://raw.githubusercontent.com/Adairwhy/ImageBed/main/img/20220725-Fluent-MRF.png width=75% />
+</div>
+<ul>
+<li>设置边界条件。<br />
+周期面选择Rotational。<br />
+输入参数选择New Input Parameter方式，定义好参数名和初始值。<br />
+参数化设置参考：<a target="_blank" rel="noopener" href="http://www.360doc.com/content/22/0718/13/15913066_1040317232.shtml">Fluent参数化功能应用</a></li>
+</ul>
+<div  align="center"> 
+<img src=https://raw.githubusercontent.com/Adairwhy/ImageBed/main/img/20220725-Fluent-参数化输入.png width=75% />
+</div>
+<ul>
+<li>创建物理量监测，选择Create Output Parameter，作为参数化求解的直接输出结果。</li>
+</ul>
+<div  align="center"> 
+<img src=https://raw.githubusercontent.com/Adairwhy/ImageBed/main/img/20220725-Fluent-物理量监测.png width=75% />
+</div>
+<ul>
+<li>
+<p>选择计算方法、初始化、设置迭代步数，求解。</p>
+</li>
+<li>
+<p>退出Fluent，进入Parameter Set。<br />
+设置参数时勾选Retained Data，之后可以通过右键，选择Set as Current，将详细结果加载入CFD Post进行查看。</p>
+</li>
+</ul>
+<div  align="center"> 
+<img src=https://raw.githubusercontent.com/Adairwhy/ImageBed/main/img/20220725-Fluent-参数集求解.png width=100% />
+</div>
+<hr />
+<h3 id="4-steady-state-thermal与static-structural设置"><a class="markdownIt-Anchor" href="#4-steady-state-thermal与static-structural设置"></a> <strong>4 Steady-State Thermal与Static Structural设置</strong></h3>
+<ul>
+<li>在所需参数化的参数前勾选P即可实现参数集中的输入输出。</li>
+</ul>
+<div  align="center"> 
+<img src=https://raw.githubusercontent.com/Adairwhy/ImageBed/main/img/20220725-FEM-参数化输入.png width=75% />
+</div>
+<hr />
+<h3 id="5-工作流及完整参数集"><a class="markdownIt-Anchor" href="#5-工作流及完整参数集"></a> <strong>5 工作流及完整参数集</strong></h3>
+<ul>
+<li>工作流：</li>
+</ul>
+<div  align="center"> 
+<img src=https://raw.githubusercontent.com/Adairwhy/ImageBed/main/img/20220725-End-最终工作流.png width=100% />
+</div>
+<ul>
+<li>参数集：</li>
+</ul>
+<div  align="center"> 
+<img src=https://raw.githubusercontent.com/Adairwhy/ImageBed/main/img/20220725-End-最终参数集.png width=100% />
+</div>
+<hr />
+<hr />
+<h5 id="计算结果分析的一个发现"><a class="markdownIt-Anchor" href="#计算结果分析的一个发现"></a> <strong>计算结果分析的一个发现</strong></h5>
+<p>随着冷气流速的上升，出口面平均温度先上升后下降，叶片表面平均温度先下降后上升。下图为冷气流速为2/8/16 m/s时的云图。<br />
+产生这种结果的原因应当是冷气与热气的掺混程度变化，冷气流速较低时，被高速热气流改变流动方向，无法接触到叶片表面；过高时，则导致热气压缩程度上升，冷气向下流动受到阻挡，同样无法接触到叶片表面。</p>
+<div  align="center"> 
+<img src=https://raw.githubusercontent.com/Adairwhy/ImageBed/main/img/20220725-V_cold-2.jpg width=75% />
+</div>
+<font color="#5F5F5F"><center>冷气流速2m/s</center>
+<div  align="center"> 
+<img src=https://raw.githubusercontent.com/Adairwhy/ImageBed/main/img/20220725-V_cold-8.jpg width=75% />
+</div>
+<font color="#5F5F5F"><center>冷气流速8m/s</center>
+<div  align="center"> 
+<img src=https://raw.githubusercontent.com/Adairwhy/ImageBed/main/img/20220725-V_cold-16.jpg width=75% />
+</div>
+<font color="#5F5F5F"><center>冷气流速16m/s</center></p></div><div class="share"><span>Share</span>&nbsp;<span class="soc"><a href="javascript:(function(){EN_CLIP_HOST='http://www.evernote.com';try{var%20x=document.createElement('SCRIPT');x.type='text/javascript';x.src=EN_CLIP_HOST+'/public/bookmarkClipper.js?'+(new%20Date().getTime()/100000);document.getElementsByTagName('head')[0].appendChild(x);}catch(e){location.href=EN_CLIP_HOST+'/clip.action?url='+encodeURIComponent(location.href)+'&amp;title='+encodeURIComponent(document.title);}})();" ref="nofollow" target="_blank" class="fa fa-bookmark"></a></span><span class="soc"><a href="javascript:void((function(s,d,e){try{}catch(e){}var f='http://service.weibo.com/share/share.php?',u=d.location.href,p=['url=',e(u),'&amp;title=',e(d.title),'&amp;appkey=2924220432'].join('');function a(){if(!window.open([f,p].join(''),'mb',['toolbar=0,status=0,resizable=1,width=620,height=450,left=',(s.width-620)/2,',top=',(s.height-450)/2].join('')))u.href=[f,p].join('');};if(/Firefox/.test(navigator.userAgent)){setTimeout(a,0)}else{a()}})(screen,document,encodeURIComponent));" class="fa fa-weibo"></a></span><span class="soc"><a target="_blank" rel="noopener" href="http://twitter.com/home?status=http://adairwhy.github.io/2022/07/25/2022_07_25 - 旋转机械热流固参数化仿真流程 - Tech/%20Adairwhy%20ANSYS Fluent旋转机械周期性边界MRF方法热流固耦合参数化仿真关键步骤流程" class="fa fa-twitter"></a></span></div><div class="pagination"><p class="clearfix"><span>&nbsp;</span><span class="next pagbuttons"><a role="navigation" href="/2022/07/22/2022_07_22%20-%20hexo+github%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2%20-%20Tech/" title="hexo+github搭建博客时可能会遇到的问题以及解决办法">Next post: hexo+github搭建博客时可能会遇到的问题以及解决办法&nbsp;<i class="fa fa-angle-double-right"></i></a></span></p></div></div></div></div><div class="visible-xs site-bottom-footer"><footer><p>&copy;&nbsp;2022&nbsp;<a target="_blank" href="http://adairwhy.github.io" rel="noopener noreferrer">Adair Why</a></p><p>Theme&nbsp;<a target="_blank" href="https://github.com/SumiMakito/hexo-theme-typography" rel="noopener noreferrer">Typography</a>&nbsp;by&nbsp;<a target="_blank" href="https://www.keep.moe" rel="noopener noreferrer">Makito</a></p><p>Proudly published with&nbsp;<a target="_blank" href="https://hexo.io" rel="noopener noreferrer">Hexo</a></p></footer></div></div></div></div><script src="/js/jquery-3.1.0.min.js"></script><script src="/js/bootstrap.min.js"></script><script src="/js/jquery-migrate-1.2.1.min.js"></script><script src="/js/jquery.appear.js"></script><script src="/js/google-analytics.js"></script><script src="/js/typography.js"></script></body></html>

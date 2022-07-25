@@ -6,7 +6,7 @@
   <link href="http://adairwhy.github.io/atom.xml" rel="self"/>
   
   <link href="http://adairwhy.github.io/"/>
-  <updated>2022-07-22T08:46:35.565Z</updated>
+  <updated>2022-07-25T12:39:02.090Z</updated>
   <id>http://adairwhy.github.io/</id>
   
   <author>
@@ -17,11 +17,37 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>ANSYS Fluent旋转机械周期性边界MRF方法热流固耦合参数化仿真关键步骤流程</title>
+    <link href="http://adairwhy.github.io/2022/07/25/2022_07_25%20-%20%E6%97%8B%E8%BD%AC%E6%9C%BA%E6%A2%B0%E7%83%AD%E6%B5%81%E5%9B%BA%E5%8F%82%E6%95%B0%E5%8C%96%E4%BB%BF%E7%9C%9F%E6%B5%81%E7%A8%8B%20-%20Tech/"/>
+    <id>http://adairwhy.github.io/2022/07/25/2022_07_25%20-%20%E6%97%8B%E8%BD%AC%E6%9C%BA%E6%A2%B0%E7%83%AD%E6%B5%81%E5%9B%BA%E5%8F%82%E6%95%B0%E5%8C%96%E4%BB%BF%E7%9C%9F%E6%B5%81%E7%A8%8B%20-%20Tech/</id>
+    <published>2022-07-25T11:57:34.000Z</published>
+    <updated>2022-07-25T12:39:02.090Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h3 id=&quot;1-scdm几何处理&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#1-scdm几何处理&quot;&gt;&lt;/a&gt; &lt;strong&gt;1 SCDM几何处理&lt;/strong&gt;&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;部分流程可以参考&lt;a</summary>
+        
+      
+    
+    
+    
+    
+    <category term="Tech" scheme="http://adairwhy.github.io/tags/Tech/"/>
+    
+  </entry>
+  
+  <entry>
     <title>hexo+github搭建博客时可能会遇到的问题以及解决办法</title>
-    <link href="http://adairwhy.github.io/2022/07/22/2022_07_22%20-%20hexo+github%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2%E6%97%B6%E5%8F%AF%E8%83%BD%E4%BC%9A%E9%81%87%E5%88%B0%E7%9A%84%E9%97%AE%E9%A2%98%E4%BB%A5%E5%8F%8A%E8%A7%A3%E5%86%B3%E5%8A%9E%E6%B3%95%20-%20Tech/"/>
-    <id>http://adairwhy.github.io/2022/07/22/2022_07_22%20-%20hexo+github%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2%E6%97%B6%E5%8F%AF%E8%83%BD%E4%BC%9A%E9%81%87%E5%88%B0%E7%9A%84%E9%97%AE%E9%A2%98%E4%BB%A5%E5%8F%8A%E8%A7%A3%E5%86%B3%E5%8A%9E%E6%B3%95%20-%20Tech/</id>
+    <link href="http://adairwhy.github.io/2022/07/22/2022_07_22%20-%20hexo+github%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2%20-%20Tech/"/>
+    <id>http://adairwhy.github.io/2022/07/22/2022_07_22%20-%20hexo+github%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2%20-%20Tech/</id>
     <published>2022-07-22T05:26:43.000Z</published>
-    <updated>2022-07-22T08:46:35.565Z</updated>
+    <updated>2022-07-25T12:04:36.240Z</updated>
     
     
       
@@ -66,11 +92,11 @@
   </entry>
   
   <entry>
-    <title>11：51</title>
+    <title>\路杳疏钟\ 11：51</title>
     <link href="http://adairwhy.github.io/2022/07/19/2022_07_19%20-%2011_51%20%20-%20Whisper/"/>
     <id>http://adairwhy.github.io/2022/07/19/2022_07_19%20-%2011_51%20%20-%20Whisper/</id>
     <published>2022-07-19T03:51:00.000Z</published>
-    <updated>2022-07-22T08:44:30.156Z</updated>
+    <updated>2022-07-25T12:48:26.173Z</updated>
     
     
       
@@ -90,11 +116,11 @@
   </entry>
   
   <entry>
-    <title>年终总结</title>
+    <title>\路杳疏钟\ 年终总结</title>
     <link href="http://adairwhy.github.io/2021/12/31/2021_12_31%20-%20%E5%B9%B4%E7%BB%88%E6%80%BB%E7%BB%93%20%20-%20Whisper/"/>
     <id>http://adairwhy.github.io/2021/12/31/2021_12_31%20-%20%E5%B9%B4%E7%BB%88%E6%80%BB%E7%BB%93%20%20-%20Whisper/</id>
     <published>2021-12-31T09:31:00.000Z</published>
-    <updated>2022-07-22T05:26:28.091Z</updated>
+    <updated>2022-07-25T12:48:26.173Z</updated>
     
     
       
@@ -114,11 +140,11 @@
   </entry>
   
   <entry>
-    <title>11：52</title>
+    <title>\路杳疏钟\ 11：52</title>
     <link href="http://adairwhy.github.io/2020/12/04/2020_12_04%20-%2011_52%20%20-%20Reading/"/>
     <id>http://adairwhy.github.io/2020/12/04/2020_12_04%20-%2011_52%20%20-%20Reading/</id>
     <published>2020-12-04T03:52:00.000Z</published>
-    <updated>2022-07-22T05:21:12.435Z</updated>
+    <updated>2022-07-25T12:48:26.173Z</updated>
     
     
       
@@ -138,11 +164,11 @@
   </entry>
   
   <entry>
-    <title>关于公众号</title>
+    <title>\路杳疏钟\ 关于公众号</title>
     <link href="http://adairwhy.github.io/2020/12/03/2020_12_03%20-%20%E5%85%B3%E4%BA%8E%E5%85%AC%E4%BC%97%E5%8F%B7%20%20-%20Whisper/"/>
     <id>http://adairwhy.github.io/2020/12/03/2020_12_03%20-%20%E5%85%B3%E4%BA%8E%E5%85%AC%E4%BC%97%E5%8F%B7%20%20-%20Whisper/</id>
     <published>2020-12-03T14:25:00.000Z</published>
-    <updated>2022-07-22T05:06:02.772Z</updated>
+    <updated>2022-07-25T12:48:26.174Z</updated>
     
     
       
@@ -162,11 +188,11 @@
   </entry>
   
   <entry>
-    <title>23：14</title>
+    <title>\路杳疏钟\ 23：14</title>
     <link href="http://adairwhy.github.io/2020/02/23/2020_12_02%20-%2023_14%20-%20Reading/"/>
     <id>http://adairwhy.github.io/2020/02/23/2020_12_02%20-%2023_14%20-%20Reading/</id>
     <published>2020-02-23T15:14:00.000Z</published>
-    <updated>2022-07-22T05:16:25.922Z</updated>
+    <updated>2022-07-25T12:47:50.074Z</updated>
     
     
       
