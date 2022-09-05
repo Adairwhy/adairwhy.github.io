@@ -6,7 +6,7 @@
   <link href="http://adairwhy.github.io/atom.xml" rel="self"/>
   
   <link href="http://adairwhy.github.io/"/>
-  <updated>2022-07-25T12:39:02.090Z</updated>
+  <updated>2022-09-05T15:23:34.398Z</updated>
   <id>http://adairwhy.github.io/</id>
   
   <author>
@@ -15,6 +15,30 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>23：09</title>
+    <link href="http://adairwhy.github.io/2022/09/05/2022_09_04%20-%20%20-%20Whisper/"/>
+    <id>http://adairwhy.github.io/2022/09/05/2022_09_04%20-%20%20-%20Whisper/</id>
+    <published>2022-09-05T15:09:14.000Z</published>
+    <updated>2022-09-05T15:23:34.398Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;&lt;font color=&quot;black&quot; size=4 face=&quot;华文中宋&quot;&gt;　　搬丰台来的第一月，写点儿什么吧。&lt;/font&gt;&lt;/p&gt;
+&lt;p&gt;&lt;font color=&quot;black&quot; size=4</summary>
+        
+      
+    
+    
+    
+    
+    <category term="Whisper" scheme="http://adairwhy.github.io/tags/Whisper/"/>
+    
+  </entry>
   
   <entry>
     <title>ANSYS Fluent旋转机械周期性边界MRF方法热流固耦合参数化仿真关键步骤流程</title>
